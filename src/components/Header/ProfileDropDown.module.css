@@ -1,0 +1,98 @@
+.hide_show_box {
+    padding-top: 0rem;
+    position: absolute;
+    right: 0;
+    /* width: 32rem; */
+    color: black;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    font-size: 1.6rem;
+}
+
+.tooltip {
+    height: 10px;
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tooltipIcon {
+    color: #fff;
+    margin-right: 4rem;
+}
+
+.profile_wraper {
+    border-radius: 5px;
+    padding: 1.6rem;
+    background-color: #F0F0F0;
+}
+
+.profileSection,
+.actionSection {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.actionSection {
+    padding-top: 0.8rem;
+    border-bottom: 0px solid #ccc;
+    margin-left: 0.8rem;
+}
+
+.last_action {
+    border-bottom: 1px solid #ccc;
+}
+
+.action_icon {
+    display: grid;
+    place-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: #ccc;
+    margin-right: 1rem;
+}
+
+.ProfileAvatar {
+    width: 6.4rem;
+}
+
+.profileImage {
+    height: 6.4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.profileImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.Name_Email {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    color: var(--lightBlack-txt-color);
+}
+
+.action_name {
+    color: var(--lightBlack-txt-color);
+}
+
+.EmailTxt {
+    color: var(--gray-txt-color);
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+/***dynamic classes**************************/
+
+.showUserProfile {
+    opacity: 1;
+}

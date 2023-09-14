@@ -1,0 +1,82 @@
+.fix_width_height {
+    height: 160px;
+    width: 160px;
+    background: var(--glass-background-color);
+    padding: 0px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.wrap {
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
+    height: 160px;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+.tittle {
+    padding: 8px 0px;
+    color: #ccc;
+    font-weight: bold;
+    /* border: 1px solid #fff; */
+
+}
+
+.description {
+    padding: 8px 0px;
+    /* border: 1px solid #fff; */
+    /* word-break: break-all; */
+}
+
+.percentage {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    /* border: 1px solid green; */
+
+}
+
+.meter_container {
+    width: 100%;
+    align-items: end;
+
+}
+
+.tracker {
+    display: flex;
+    align-items: end;
+    margin: 32px 0px;
+    border-radius: 24px;
+    width: 24px;
+    border: 1px solid rgba(225, 251, 8);
+    box-shadow: 0px 0px 20px rgba(225, 251, 8);
+    height: 100%;
+    margin-right: 10px;
+    padding: 6px;
+    padding-right: 7px;
+}
+
+/* --progress-bar-humidity */
+.progress_bar {
+    border: 1px solid rgba(225, 251, 8);
+    border-radius: 24px;
+    background-color: rgba(225, 251, 8);
+    width: 100%;
+
+}
+
+.humidity_Bar {
+    height: var(--progress-bar-humidity);
+}
+
+.pressure_Bar {
+    height: var(--progress-bar-pressure);
+}

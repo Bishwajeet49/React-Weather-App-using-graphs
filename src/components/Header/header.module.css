@@ -1,0 +1,253 @@
+.main_container {
+    display: flex;
+    width: 200%;
+
+}
+
+.main_container section {
+    width: 100%;
+    transition: margin 0.3s ease;
+}
+
+.container {
+    color: rgb(244, 237, 237);
+    /* font-family: 'Orbitron'; */
+    /* background-color: var(--blackish-bg-color);
+  font-size: 1rem; */
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(54, 53, 53, 0.798);
+    padding: 0.8rem;
+
+}
+
+.logo_text {
+    font-family: 'Orbitron';
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 3rem;
+    text-shadow: 1px 2px 2px black;
+    opacity: 0.6;
+}
+
+.logo_text,
+.homenav {
+    margin-right: 3rem;
+}
+
+.homenav {
+    color: black;
+
+}
+
+.left,
+.end {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+}
+
+.center {
+    margin: 0rem 1.6rem;
+}
+
+/* YourComponent.module.css */
+.wraper {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
+.searchform {
+    flex: 0.5;
+}
+
+.submitBtn {
+    padding: 0.8rem 0.3rem;
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.searchInput {
+    padding: 0.8rem;
+    background-color: #ccc;
+    flex: 1;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    outline: none;
+}
+
+.mSearch_form {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    flex: 1;
+}
+
+.search_nav_bar {}
+
+.main_nav_bar {
+    /* margin-left: -100%; */
+    margin-left: -100%;
+}
+
+
+
+/* Signin btn code */
+.signInButton,
+.back_button {
+    padding: 0.8rem 1.6rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.back_button {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+
+}
+
+.signInButton:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.signInButton:focus {
+    outline: none;
+}
+
+/* Optional: Add transition for smoother hover effect */
+.signInButton {
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.open_search_form_btn {
+    display: none;
+}
+
+.userProfile {
+    position: relative;
+    border-radius: 30%;
+}
+
+.userProfileBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.avatar {
+    height: 4.6rem;
+    width: 4.6rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/***************Media query***********************/
+.signInResPBtn {
+    display: none;
+
+}
+
+/* Styles that will apply for screens with a maximum width of 675 pixels or less */
+@media (max-width: 818px) {
+
+
+    .submitBtn {
+        padding: 0.8rem;
+        border-radius: 50%;
+    }
+
+
+    .searchform {
+        display: none;
+    }
+
+    .open_search_form_btn {
+        display: block;
+    }
+
+    /* Add more styles as needed */
+}
+
+@media (max-width: 414px) {
+
+    .signInResPBtn {
+        display: block;
+
+    }
+
+    .signInButton {
+        padding: 0.6rem 0.8rem;
+        border-radius: 50%;
+    }
+
+    .logo_text {
+        font-size: 2rem;
+    }
+
+    .signInRegularBtn {
+        display: none;
+    }
+
+    .back_button {
+        padding: 1.4rem;
+
+    }
+
+}
+
+
+@media (max-width: 378px) {
+
+    .logo_text .logo_text,
+    .homenav {
+        margin-right: 1.5rem;
+    }
+
+}
+
+/***************dynamic classes***********************/
+.search_nav_bar {}
+
+.main_nav_bar {
+    margin-left: -100%;
+
+}
+
+/* reduce main container width to 100% on clickin of search btn to open mSearchForm */
+
+.main_container_reduced {
+    width: 100%;
+}

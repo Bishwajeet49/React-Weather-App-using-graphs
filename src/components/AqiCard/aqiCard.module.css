@@ -1,0 +1,82 @@
+.fix_width_height {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 160px;
+    width: 160px;
+    background: var(--glass-background-color);
+    padding: 0px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.tittle {
+    padding: 4px 0px;
+    color: #ccc;
+    font-weight: bold;
+
+}
+
+.Aqi_range {
+    font-size: 13px;
+}
+
+
+.container {
+    margin-top: 8px;
+    height: 80px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #ffffff60;
+    padding: 4px;
+}
+
+.labels {
+
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 1px 1px 3px black;
+    color: #fff;
+
+}
+
+.tracker {
+    margin-top: 8px;
+    height: 8px;
+    background-color: #ffffffe6;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(225, 251, 8);
+
+}
+
+.progress_bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(225, 251, 8);
+    border-radius: 8px;
+    transition: all 1s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), inset 0 0 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.toolTip {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.075);
+    position: absolute;
+    white-space: nowrap;
+    padding: 4px 2px;
+    border-radius: 8px;
+    right: 0;
+    margin-top: 15px;
+    transform: translateX(50%);
+    background-color: rgb(187, 6, 6);
+
+}
+
+.triangle {
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+}

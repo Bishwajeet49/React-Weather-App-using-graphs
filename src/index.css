@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Nunito';
+  /* font-weight: 1 1000; */
+  src: url('/fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  /* font-weight: 1 1000; */
+  src: url('/fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blackish-bg-color: #007bff;
+  --lightBlack-txt-color: #5f5f5f;
+  --black-txt-color: #232526;
+  --gray-txt-color: #c4c0c0;
+  --yellow: linear-gradient(60deg, rgb(225, 251, 8), rgba(176, 164, 32, 0.82));
+
+  --glass-background-color: linear-gradient(to left, #232526, #414345);
+
+  font-size: 10px;
+  --box-shadow1: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  /* meter initial values */
+  --rain-chanses: 10%;
+  --progress-bar-humidity: 0%;
+  --progress-bar-pressure: 0%;
+  --uv-meter: 0;
+}
+
+/* //global first break point */
+@media (max-width: 588px) {
+  :root {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 530px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 468px) {
+  :root {
+    font-size: 7px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-family: 'Nunito';
+  /* font-weight: 1000; Use the desired font weight (e.g., 400 for regular) */
+}
+
+button,
+input {
+  font-family: 'Nunito';
+  font-size: 1.6rem;
+}
